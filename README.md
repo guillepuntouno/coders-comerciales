@@ -1,4 +1,4 @@
-# 🌐 Coders Comerciales - Sitio Web Oficial & Proyecto Técnico
+# 🌐 Coders Comerciales · Sitio Web Oficial - Proyecto Técnico
 
 **Bienvenido a [Coders Comerciales](https://coderscomerciales.com)** — la comunidad para líderes tech que quieren aprender a vender(se) mejor.
 
@@ -17,7 +17,7 @@ Aquí ayudamos a:
 - Líderes tech que quieren aprender a vender sin vender.
 - Emprendedores que quieren posicionarse como referentes y vivir del código en sus propios términos.
 
-Creamos un entorno donde compartir, crecer y ganar visibilidad sin caer en fórmulas vacías. Aquí no hay gurus ni fórmulas mágicas, solo práctica con propósito, ejemplos reales y personas comprometidas con el crecimiento.
+Creamos un entorno donde compartir, crecer y ganar visibilidad sin caer en fórmulas vacías. Aquí no hay gurús ni fórmulas mágicas, solo práctica con propósito, ejemplos reales y personas comprometidas con el crecimiento.
 
 ---
 
@@ -38,32 +38,11 @@ Esta es la versión **v1.0**, diseñada con simplicidad, velocidad y claridad de
 
 - Python 3.10+
 - Flask
-- HTML + tailwindcss
+- HTML + TailwindCSS
 
 ---
+## 🤝 Filosofía Open Source
 
-## 📂 Estructura del proyecto
-
-```bash
-CODERS_COMERCIALES/
-web
-├── static/
-│   ├── css/
-│   │   └── styles.css
-│   ├── images/
-│   │   ├── comunidad.jpg
-│   │   ├── DSC_0300.jpg
-│   │   ├── webinar.jpg
-│   │   └── ...otros recursos gráficos
-│   └── js/
-│       └── main.js
-├── templates/
-│   └── home.html
-├── app.py               # Archivo principal de la app Flask
-├── requirements.txt     # Lista de dependencias
-└── README.md            # Este documento
-
-🤝 Filosofía Open Source
 Creemos que compartir es una forma poderosa de construir.
 
 Por eso este proyecto es abierto: no solo para mostrar el código, sino para invitarte a formar parte.
@@ -73,7 +52,29 @@ Si te interesa contribuir, proponer mejoras, aprender de su estructura o incluso
 
 La comunidad se construye compartiendo, no compitiendo.
 
-⚖️ Licencia
+--
+## 🤝 Licencia
+
 Este proyecto está publicado bajo la licencia MIT.
 Puedes usarlo, modificarlo, adaptarlo y compartirlo libremente, siempre citando la fuente.
 
+## 📂 Estructura del proyecto
+
+```bash
+CODERS_COMERCIALES/
+└── web/
+    ├── static/
+    │   ├── css/
+    │   │   └── styles.css
+    │   ├── images/
+    │   │   ├── comunidad.jpg
+    │   │   ├── DSC_0300.jpg
+    │   │   ├── webinar.jpg
+    │   │   └── ...otros recursos gráficos
+    │   └── js/
+    │       └── main.js
+    ├── templates/
+    │   └── home.html
+    ├── app.py               # Archivo principal de la app Flask
+    ├── requirements.txt     # Lista de dependencias
+    └── README.md            # Este documento
