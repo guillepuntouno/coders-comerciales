@@ -1,0 +1,15 @@
+name: Deploy on PythonAnywhere
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Llamar a la API de PythonAnywhere para reiniciar la webapp
+        run: |
+          curl -X POST https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/webapps/www.coderscomerciales.com/reload/ \
+          -H "Authorization: Token ${{ secrets.PA_API_TOKEN }}"
