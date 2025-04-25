@@ -16,7 +16,7 @@ jobs:
           username: gmartinezjr
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/gmartinezjr/mysite
+            cd /home/gmartinezjr/mysite/web
             git pull origin main
             pip3 install -r requirements.txt
             touch /var/www/www.coderscomerciales_com_wsgi.py
