@@ -9,7 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Llamar a la API de PythonAnywhere para reiniciar la webapp
-        run: |
-          curl -X POST https://www.pythonanywhere.com/api/v0/user/${{ secrets.PA_USERNAME }}/webapps/www.coderscomerciales.com/reload/ \
-          -H "Authorization: Token ${{ secrets.PA_API_TOKEN }}"
+      - name: Deploy to PythonAnywhere via SSH
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ssh.pythonanywhere.com
+          username: gmartinezjr
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /home/gmartinezjr/mysite
+            git pull origin main
+            pip3 install -r requirements.txt
+            touch /var/www/www.coderscomerciales_com_wsgi.py
